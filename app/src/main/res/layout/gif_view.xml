@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gif_photo_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:id="@+id/gif_tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="2%"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/gif_progress_wheel"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        wheel:matProg_barColor="#4a4a4a"
+        wheel:matProg_progressIndeterminate="true" />
+
+</FrameLayout>
